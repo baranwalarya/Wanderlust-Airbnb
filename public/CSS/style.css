@@ -127,3 +127,91 @@ body{
     height: 300px;
     width: 80vh;
 }
+
+/* Media Queries for Responsiveness */
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .navbar {
+        height: 4rem;
+    }
+
+    .card-img-top {
+        border-radius: 0.5rem;
+    }
+
+    .f-info {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .f-info-links,
+    .f-info-socials,
+    .f-info-brand {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .show-img {
+        height: 20vh;
+    }
+
+    #map {
+        width: 100%;
+        height: 200px; /* Reduce map size for mobile */
+    }
+
+    .listing-card {
+        margin-bottom: 1rem;
+    }
+
+    .card-body {
+        padding: 0.5rem;
+    }
+}
+
+/* Tablets (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar {
+        height: 4.5rem;
+    }
+
+    .card-img-top {
+        border-radius: 0.75rem;
+    }
+
+    .f-info {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .show-img {
+        height: 25vh;
+    }
+
+    #map {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+/* Large Screens (Desktop) */
+@media (min-width: 1024px) {
+    .navbar {
+        height: 5rem;
+    }
+
+    .f-info {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .show-img {
+        height: 30vh;
+    }
+
+    #map {
+        width: 80vw;
+        height: 300px;
+    }
+}
