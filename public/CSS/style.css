@@ -205,5 +205,10 @@ body{
     .card-img-top {
         border-radius: 0.5rem !important;
     }
+
+      #map{
+        height: 300px;
+        width: 30vh;
+    }
   }
   
